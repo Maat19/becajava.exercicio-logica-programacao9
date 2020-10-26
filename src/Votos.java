@@ -7,9 +7,9 @@ public class Votos {
 	public float Val;
 	public float Brancos;
 	public float Nulos;
-	public float Calcularvalidos;
-	public float Calcularbrancos;
-	public float Calcularnulos;
+	public float Res1;
+	public float Res2;
+	public float Res3;
 
 	
 	public Scanner Leitura = new Scanner(System.in);
@@ -34,16 +34,14 @@ public class Votos {
 		
 		public void resolvendoConta() {
 			
-			Calcularvalidos = (Val/Total)*100;
-			Calcularbrancos = (Brancos / Total) *100;
-			Calcularnulos =   (Nulos / Total)*100;
+			Res1 = (Val/Total)*100;
+			Res2 = (Brancos / Total)*100;
+			Res3 =  (Nulos / Total)*100;
 			
-		}
-	
-		public void mostrandoResultados() {
-			System.out.println("Votos Válidos:" +Val+ "%");
-			System.out.println("votos brancos: " + Brancos + ("%"));
-			System.out.println("votos nulos: " + Nulos + ("%"));
+		
+			System.out.println("Votos Válidos:" +Res1+ "%");
+			System.out.println("votos brancos: " + Res2 + ("%"));
+			System.out.println("votos nulos: " + Res3 + ("%"));
 		}
 		
 }

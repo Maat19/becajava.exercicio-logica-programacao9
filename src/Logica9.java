@@ -8,7 +8,7 @@ public class Logica9 {
 		
 		
 		eleicao.coletandoDados();
-		eleicao.mostrandoResultados();
+		eleicao.resolvendoConta();
 		
 	}
 	
